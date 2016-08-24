@@ -1,0 +1,1 @@
+showNotification = ["EnemyJetDown", "Enemy CAS is down. Well Done!"]; publicVariable "showNotification";

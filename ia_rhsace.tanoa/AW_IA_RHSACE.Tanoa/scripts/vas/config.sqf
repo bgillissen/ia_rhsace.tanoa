@@ -8,39 +8,6 @@ vas_disableLoadSave = false;
 vas_customslots = 41; //9 is actually 10 slots, starts from 0 to whatever you set, so always remember when setting a number to minus by 1, i.e 12 will be 11.
 //Disable 'VAS hasn't finished loading' Check !!! ONLY RECOMMENDED FOR THOSE THAT USE ACRE AND OTHER LARGE ADDONS !!!
 vas_disableSafetyCheck = false;
-/*
-	NOTES ON EDITING!
-	YOU MUST PUT VALID CLASS NAMES IN THE VARIABLES IN AN ARRAY FORMAT, NOT DOING SO WILL RESULT IN BREAKING THE SYSTEM!
-	PLACE THE CLASS NAMES OF GUNS/ITEMS/MAGAZINES/BACKPACKS/GOGGLES IN THE CORRECT ARRAYS! TO DISABLE A SELECTION I.E
-	GOGGLES vas_goggles = [""]; AND THAT WILL DISABLE THE ITEM SELECTION FOR WHATEVER VARIABLE YOU ARE WANTING TO DISABLE!
-
-														EXAMPLE
-	vas_weapons = ["srifle_EBR_ARCO_point_grip_F","arifle_Khaybar_Holo_mzls_F","arifle_TRG21_GL_F","Binocular"];
-	vas_magazines = ["30Rnd_65x39_case_mag","20Rnd_762x45_Mag","30Rnd_65x39_caseless_green"];
-	vas_items = ["ItemMap","ItemGPS","NVGoggles"];
-	vas_backpacks = ["B_Bergen_sgg_Exp","B_AssaultPack_rgr_Medic"];
-	vas_goggles = [""];
-
-												Example for side specific (TvT)
-	switch(playerSide) do
-	{
-		//Blufor
-		case west:
-		{
-			vas_weapons = ["srifle_EBR_F","arifle_MX_GL_F"];
-			vas_items = ["muzzle_snds_H","muzzle_snds_B","muzzle_snds_L","muzzle_snds_H_MG"]; //Removes suppressors from VAS
-			vas_goggles = ["G_Diving"]; //Remove diving goggles from VAS
-		};
-		//Opfor
-		case west:
-		{
-			vas_weapons = ["srifle_EBR_F","arifle_MX_GL_F"];
-			vas_items = ["muzzle_snds_H","muzzle_snds_B","muzzle_snds_L","muzzle_snds_H_MG"]; //Removes suppressors from VAS
-			vas_goggles = ["G_Diving"]; //Remove diving goggles from VAS
-		};
-	};
-*/
-
 //If the arrays below are empty (as they are now) all weapons, magazines, items, backpacks and goggles will be available
 //Want to limit VAS to specific weapons? Place the classnames in the array!
 vas_weapons = [
@@ -252,7 +219,10 @@ vas_weapons = [
         "rhs_weap_hk416d145_m320",
         "rhs_weap_m24sws",
         "rhs_weap_m24sws_blk",
-        "rhs_weap_m24sws_ghillie"        
+        "rhs_weap_m24sws_ghillie",
+        
+		"ACE_VMH3",
+		"ACE_VMM3"       
 ];
 //Want to limit VAS to specific magazines? Place the classnames in the array!
 vas_magazines = [
@@ -456,15 +426,47 @@ vas_magazines = [
         //"rhsusf_mag_10Rnd_STD_50BMG_mk211" //sniper explosive
         "rhsusf_5Rnd_762x51_m118_special_Mag",
         "rhsusf_5Rnd_762x51_m993_Mag",
-        "rhsusf_5Rnd_762x51_m62_Mag"
+        "rhsusf_5Rnd_762x51_m62_Mag",
+        
+        "ACE_100Rnd_65x39_caseless_mag_Tracer_Dim",
+		"ACE_200Rnd_65x39_cased_Box_Tracer_Dim",
+		"ACE_30Rnd_65x39_caseless_mag_Tracer_Dim",
+		"ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim",
+		"ACE_30Rnd_556x45_Stanag_M995_AP_mag",
+		"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+		"ACE_30Rnd_556x45_Stanag_Mk318_mag",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		"ACE_20Rnd_762x51_Mag_Tracer",
+		"ACE_20Rnd_762x51_Mag_Tracer_Dim",
+		"ACE_20Rnd_762x51_Mag_SD",
+		"ACE_10Rnd_762x51_M118LR_Mag",
+		"ACE_10Rnd_762x51_Mk316_Mod_0_Mag",
+		"ACE_10Rnd_762x51_Mk319_Mod_0_Mag",
+		"ACE_10Rnd_762x51_M993_AP_Mag",
+		"ACE_20Rnd_762x51_M118LR_Mag",
+		"ACE_20Rnd_762x51_Mk316_Mod_0_Mag",
+		"ACE_20Rnd_762x51_Mk319_Mod_0_Mag",
+		"ACE_20Rnd_762x51_M993_AP_Mag",
+		"ACE_20Rnd_762x67_Mk248_Mod_0_Mag",
+		"ACE_20Rnd_762x67_Mk248_Mod_1_Mag",
+		"ACE_20Rnd_762x67_Berger_Hybrid_OTM_Mag",
+		"ACE_30Rnd_65x47_Scenar_mag",
+		"ACE_30Rnd_65_Creedmor_mag",
+		"ACE_10Rnd_338_300gr_HPBT_Mag",
+		"ACE_10Rnd_338_API526_Mag",
+		"ACE_5Rnd_127x99_Mag",
+		"ACE_5Rnd_127x99_API_Mag",
+		"ACE_5Rnd_127x99_AMAX_Mag",
+		"ACE_30Rnd_9x19_mag",
+		"ACE_16Rnd_9x19_mag",
+		"ACE_10Rnd_762x54_Tracer_mag",
+		"ACE_HuntIR_M203"
 ];
 //Want to limit VAS to specific items? Place the classnames in the array!
 vas_items = [
 		"tf_anprc152",			//TFAR NATO radios
-        //"tf_anprc152_1",
-        //"tf_rf7800str",
         
-        "MineDetector",
+        //"MineDetector",
         
         "G_Aviator",			//VANILLA GOOGLES
         "G_Balaclava_blk",
@@ -898,7 +900,31 @@ vas_items = [
 		"ACE_HandFlare_Base",
 		"muzzle_snds_H_SW",
 		"ACE_UAVBattery",
-		"ACE_wirecutter"
+		"ACE_wirecutter",
+		"ACE_ConcertinaWireCoil",
+		"ACE_ConcertinaWire",
+		"ACE_DAGR",
+		"ACE_Flashlight_MX",
+		"ACE_Flashlight_KSF1991",
+		"ACE_Flashlight_XL50",
+		"ACE_Banana",
+		"ACE_HuntIR_monitor",
+		"ACE_Kestrel4500",
+		"ACE_microDAGR",
+		"ACE_MX2A",
+		"ACE_NVG_Gen3",
+		"ACE_SpareBarrel",
+		"ACE_RangeCard",
+		"ACE_SpottingScope",
+		"ACE_SpraypaintBlack",
+		"ACE_SpraypaintBlue",
+		"ACE_SpraypaintGreen",
+		"ACE_SpraypaintRed",
+		"ACE_EntrenchingTool",
+		"ACE_Tripod",
+		"ACE_Vector",
+		"ACE_VectorDay",
+		"ACE_Yardage450"
 ];
 //Want to limit backpacks? Place the classnames in the array!
 vas_backpacks = [
@@ -965,7 +991,12 @@ vas_backpacks = [
         "tf_rt1523g_green",
         "tf_rt1523g_rhs",
         "tf_rt1523g_sage",
-        "tf_anarc210"
+        "tf_anarc210",
+        "ACE_gunbag",
+		"ACE_gunbag_Tan",
+		"ACE_ReserveParachute",
+		"ACE_NonSteerableParachute",
+		"ACE_TacticalLadder_Pack"
 ];
 //Want to limit goggles? Place the classnames in the array!
 vas_glasses = [

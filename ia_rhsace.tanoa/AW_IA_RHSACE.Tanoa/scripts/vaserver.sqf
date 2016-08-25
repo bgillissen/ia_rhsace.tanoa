@@ -74,7 +74,12 @@ _box = _this select 0;
         "tf_rt1523g_green",
         "tf_rt1523g_rhs",
         "tf_rt1523g_sage",
-        "tf_anarc210"
+        "tf_anarc210",
+        "ACE_gunbag",
+		"ACE_gunbag_Tan",
+		"ACE_ReserveParachute",
+		"ACE_NonSteerableParachute",
+		"ACE_TacticalLadder_Pack"
     ],
     true
 ] call BIS_fnc_addVirtualBackpackCargo;
@@ -283,7 +288,41 @@ _box = _this select 0;
         //"rhsusf_mag_10Rnd_STD_50BMG_mk211" //explosive sniper ammo
         "rhsusf_5Rnd_762x51_m118_special_Mag",
         "rhsusf_5Rnd_762x51_m993_Mag",
-        "rhsusf_5Rnd_762x51_m62_Mag"
+        "rhsusf_5Rnd_762x51_m62_Mag",
+        
+        "ACE_100Rnd_65x39_caseless_mag_Tracer_Dim",
+		"ACE_200Rnd_65x39_cased_Box_Tracer_Dim",
+		"ACE_30Rnd_65x39_caseless_mag_Tracer_Dim",
+		"ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim",
+		"ACE_30Rnd_556x45_Stanag_M995_AP_mag",
+		"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+		"ACE_30Rnd_556x45_Stanag_Mk318_mag",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		"ACE_20Rnd_762x51_Mag_Tracer",
+		"ACE_20Rnd_762x51_Mag_Tracer_Dim",
+		"ACE_20Rnd_762x51_Mag_SD",
+		"ACE_10Rnd_762x51_M118LR_Mag",
+		"ACE_10Rnd_762x51_Mk316_Mod_0_Mag",
+		"ACE_10Rnd_762x51_Mk319_Mod_0_Mag",
+		"ACE_10Rnd_762x51_M993_AP_Mag",
+		"ACE_20Rnd_762x51_M118LR_Mag",
+		"ACE_20Rnd_762x51_Mk316_Mod_0_Mag",
+		"ACE_20Rnd_762x51_Mk319_Mod_0_Mag",
+		"ACE_20Rnd_762x51_M993_AP_Mag",
+		"ACE_20Rnd_762x67_Mk248_Mod_0_Mag",
+		"ACE_20Rnd_762x67_Mk248_Mod_1_Mag",
+		"ACE_20Rnd_762x67_Berger_Hybrid_OTM_Mag",
+		"ACE_30Rnd_65x47_Scenar_mag",
+		"ACE_30Rnd_65_Creedmor_mag",
+		"ACE_10Rnd_338_300gr_HPBT_Mag",
+		"ACE_10Rnd_338_API526_Mag",
+		"ACE_5Rnd_127x99_Mag",
+		"ACE_5Rnd_127x99_API_Mag",
+		"ACE_5Rnd_127x99_AMAX_Mag",
+		"ACE_30Rnd_9x19_mag",
+		"ACE_16Rnd_9x19_mag",
+		"ACE_10Rnd_762x54_Tracer_mag",
+		"ACE_HuntIR_M203"
     ],
     true
 ] call BIS_fnc_addVirtualMagazineCargo;
@@ -500,7 +539,10 @@ _box = _this select 0;
         "rhs_weap_hk416d145_m320",
         "rhs_weap_m24sws",
         "rhs_weap_m24sws_blk",
-        "rhs_weap_m24sws_ghillie"
+        "rhs_weap_m24sws_ghillie",
+       
+		"ACE_VMH3",
+		"ACE_VMM3"
     ],
     true
 ] call BIS_fnc_addVirtualWeaponCargo;
@@ -511,7 +553,7 @@ _box = _this select 0;
     [
         "tf_anprc152",			//TFAR NATO radios
         
-        "MineDetector",
+        //"MineDetector",
         
         "G_Aviator",			//VANILLA GOOGLES
         "G_Balaclava_blk",
@@ -946,7 +988,31 @@ _box = _this select 0;
 		"ACE_HandFlare_Base",
 		"muzzle_snds_H_SW",
 		"ACE_UAVBattery",
-		"ACE_wirecutter"
+		"ACE_wirecutter",
+		"ACE_ConcertinaWireCoil",
+		"ACE_ConcertinaWire",
+		"ACE_DAGR",
+		"ACE_Flashlight_MX",
+		"ACE_Flashlight_KSF1991",
+		"ACE_Flashlight_XL50",
+		"ACE_Banana",
+		"ACE_HuntIR_monitor",
+		"ACE_Kestrel4500",
+		"ACE_microDAGR",
+		"ACE_MX2A",
+		"ACE_NVG_Gen3",
+		"ACE_SpareBarrel",
+		"ACE_RangeCard",
+		"ACE_SpottingScope",
+		"ACE_SpraypaintBlack",
+		"ACE_SpraypaintBlue",
+		"ACE_SpraypaintGreen",
+		"ACE_SpraypaintRed",
+		"ACE_EntrenchingTool",
+		"ACE_Tripod",
+		"ACE_Vector",
+		"ACE_VectorDay",
+		"ACE_Yardage450"
     ],
     true
 ] call BIS_fnc_addVirtualItemCargo;
